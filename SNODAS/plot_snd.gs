@@ -62,7 +62,8 @@ while (ir <= rows)
 
 'set time 'ttl.id 
 'set clevs 'levs
-'d 'var.id
+*'d 'var.id
+'d re('var.id', 232, linear, -124.875, 0.25, 112, linear, 25.125, 0.25)'
 'cbarn' 
 'draw title Snow Depth (m) 'ttl.id
 
@@ -70,7 +71,9 @@ while (ir <= rows)
  endwhile
 ir=ir+1
 endwhile
-'gxyat -x 4000 -y 3000 snd-jan-2005.png'
-'gxyat -x 1000 -y 750 sm-snd-jan-2005.png'
+'printim sm-snd-jan-2005.png png x1000 y750 white' 
+'printim snd-jan-2005.png png x4000 y3000 white' 
+*'gxyat -x 1000 -y 750 sm-snd-jan-2005.png'
+*'gxyat -x 4000 -y 3000 snd-jan-2005.png'
 
 

@@ -97,8 +97,12 @@ t1=subwrd(line, 13)
  endwhile
 ir=ir+1
 endwhile
-'gxyat -x 4000 -y 3000 mpdi-si-s0-stype-'d0.ip'.png'
-'gxyat -x 1000 -y 750 sm-mpdi-si-s0-stype-'d0.ip'.png'
+*'gxyat -x 4000 -y 3000 mpdi-si-s0-stype-'d0.ip'.png'
+*'gxyat -x 1000 -y 750 sm-mpdi-si-s0-stype-'d0.ip'.png'
+*'gxprint mpdi-si-s0-stype-'d0.ip'.png x4000 y3000 white'
+*'gxprint sm-mpdi-si-s0-stype-'d0.ip'.png x1000 y750 white'
+'printim sm-mpdi-si-s0-stype-'d0.ip'.png png x1000 y750 white'
+'printim mpdi-si-s0-stype-'d0.ip'.png png x4000 y3000 white'
 
 ip=ip+1
 endwhile
