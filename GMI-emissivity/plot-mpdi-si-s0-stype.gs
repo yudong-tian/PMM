@@ -27,13 +27,17 @@ ttl.2='Tb19V-Tb37V'
 ttl.3='Sigma0 (Ku)' 
 ttl.4='Surf Type' 
 
+*ip
+ttldate.1='1-8 Jan2005'
+ttldate.2='1-8 Jul2005'
+
 var.1='(tb11v-tb11h)/(tb11v+tb11h)*600'  
 var.2='tb19v-tb37v' 
 var.3='s0ku' 
 var.4='surftype' 
 
-levs.1='0 5 10 15 20 25 30 35 40 45 50 55 60 65 70'  
-levs.2='-10 -5 0 5 10 15 20 25 30 35 40' 
+levs.1='0 5 10 15 20 25 30 35 40 45 50 55 60' 
+levs.2='-10 -5 0 5 10 15 20 25 30' 
 levs.3='-15 -12  -9 -6 -3 0 3 6 9 12 15' 
 levs.4='1 2 3 4 5 6 7 8 9 10 11 12 13 14' 
 
@@ -71,6 +75,7 @@ while (ir <= rows)
 'set lat 'lat1' 'lat2
 'set lon 'lon1' 'lon2
 'set gxout grfill' 
+'set mpdset hires'
 
 'set time 'd0.ip' 'd1.ip
 'q dims' 
@@ -86,7 +91,7 @@ t1=subwrd(line, 13)
   t0=t0+1
  endwhile 
  'cbarn' 
- 'draw title 'ttl.id' 'd0.ip
+ 'draw title 'ttl.id' 'ttldate.ip
 
  ic=ic+1
  endwhile
