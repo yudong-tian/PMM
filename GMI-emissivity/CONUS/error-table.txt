@@ -1,0 +1,18 @@
+7/19/16
+
+
+  Table X: Comparison of Five Prediction Methods
+====================================================================
+     |  10V     10H     19V     19H     37V     37H     89V     89H
+--------------------------------------------------------------------
+M1:  |	1.91	1.86	1.96	2.24	2.75	3.32	4.57	5.39
+M2:  |	1.78	1.82	1.79	1.9	2.42	2.59	3.82	4.1
+M3:  |	1.15	1.15	1.24	1.28	1.3	1.43	1.66	2.04
+M4:  |	1.07	1.06	1.16	1.18	1.2	1.31	1.53	1.86
+M5:  |	0.92	0.91	0.99	1	1.04	1.1	1.32	1.6
+====================================================================
+method 1: single channel MPDI: 10G  and its square (2-predictor)
+method 2: five-channel MPDI: 10~89G, linear terms only (4-predictor)
+method 3: 9-channel Tbs: 10~89G, linear terms only (9-predictor)
+method 4: 9-channel Tb and 4-channel MPDI, linear terms only (13-predictor)
+method 5: 9-channel Tb, 9-channel Tb^2, and 4-channel MPDI (22-predictor)
